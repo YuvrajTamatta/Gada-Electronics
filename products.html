@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Gada Electronics</title>
+  <meta name="description" content="Browse the full catalog of Gada Electronics. Explore televisions, kitchen gadgets, air cooling appliances, and smart home items with special festival discounts.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Loading Animation -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="cpu" style="color: var(--primary-orange);"></i>
+        <span>Gada</span> Electronics
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="mobile-cta"><a href="tel:+1234567890" class="btn btn-orange btn-sm" style="color: white; margin-top: 15px;"><i data-lucide="phone"></i> Call Now</a></li>
+      </ul>
+      
+      <div class="navbar-cta">
+        <a href="tel:+1234567890" class="btn btn-orange btn-sm"><i data-lucide="phone"></i> Call Now</a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Our Products</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Products</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Products Main Content -->
+  <main class="section">
+    <div class="container">
+      
+      <!-- Festival Offer Banner -->
+      <div class="promo-banner fade-in-up">
+        <div class="promo-banner-text">
+          <h2>Festival Offers Available!</h2>
+          <p>Get up to 25% instant discount on major credit cards & free extended warranty on select items.</p>
+        </div>
+        <div class="promo-banner-badge">
+          <i data-lucide="gift" style="display: inline-block; vertical-align: middle; margin-right: 6px;"></i> FESTIVAL25
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filters-container fade-in-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tv">TV</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        <button class="filter-btn" data-filter="cooling">Cooling</button>
+        <button class="filter-btn" data-filter="appliances">Home Appliances</button>
+      </div>
+
+      <!-- Products Catalog Grid (12 Items) -->
+      <div class="products-grid">
+        
+        <!-- Product 1: TV -->
+        <div class="product-card fade-in-up delay-100" data-category="tv">
+          <span class="badge-discount">-15%</span>
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=500&auto=format&fit=crop&q=80" alt="Sony Bravia TV">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Sony</span>
+            <h3 class="product-title">Sony Bravia 55" 4K Smart LED TV</h3>
+            <p class="product-desc">Ultra HD screen with HDR processing, Dolby Atmos audio, and seamless smart Android TV platform.</p>
+            <div class="product-price-row">
+              <span class="product-price">$699.99 <span class="original-price">$819.99</span></span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Refrigerator -->
+        <div class="product-card fade-in-up delay-200" data-category="cooling">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500&auto=format&fit=crop&q=80" alt="Samsung Double Door Fridge">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Samsung</span>
+            <h3 class="product-title">Samsung 345L Convertible Double Door Fridge</h3>
+            <p class="product-desc">Smart digital inverter cooling with 5 modes to convert freezer into fridge storage space.</p>
+            <div class="product-price-row">
+              <span class="product-price">$549.00</span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Washing Machine -->
+        <div class="product-card fade-in-up delay-300" data-category="appliances">
+          <span class="badge-discount">-10%</span>
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1610557892470-76d74022fa36?w=500&auto=format&fit=crop&q=80" alt="LG Washing Machine">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">LG</span>
+            <h3 class="product-title">LG 8kg Direct Drive Front Load Washer</h3>
+            <p class="product-desc">6 Motion DD smart cleaning cycles with built-in heater and allergy-safe steam options.</p>
+            <div class="product-price-row">
+              <span class="product-price">$479.99 <span class="original-price">$529.99</span></span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Air Conditioner -->
+        <div class="product-card fade-in-up delay-400" data-category="cooling">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1621905252507-b354bc25edac?w=500&auto=format&fit=crop&q=80" alt="Daikin Split AC">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Daikin</span>
+            <h3 class="product-title">Daikin 1.5 Ton 5 Star Inverter Split AC</h3>
+            <p class="product-desc">Advanced variable speed compressor with silent operations and dual air filtration systems.</p>
+            <div class="product-price-row">
+              <span class="product-price">$599.00</span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Mixer Grinder -->
+        <div class="product-card fade-in-up delay-100" data-category="kitchen">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1578643463396-0997cb5328c1?w=500&auto=format&fit=crop&q=80" alt="Philips Mixer Grinder">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Philips</span>
+            <h3 class="product-title">Philips HL7756 750W Mixer Grinder</h3>
+            <p class="product-desc">High speed motor with 3 durable stainless steel jars for fine grinding, dry mixing, and juicing.</p>
+            <div class="product-price-row">
+              <span class="product-price">$79.99</span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Microwave -->
+        <div class="product-card fade-in-up delay-200" data-category="kitchen">
+          <span class="badge-discount">-20%</span>
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1574269661127-73c2af981662?w=500&auto=format&fit=crop&q=80" alt="IFB Microwave Oven">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">IFB</span>
+            <h3 class="product-title">IFB 30L Convection Microwave Oven</h3>
+            <p class="product-desc">Convection grill with auto-defrost, child safety lock, multi-stage cooking, and 101 recipes.</p>
+            <div class="product-price-row">
+              <span class="product-price">$199.99 <span class="original-price">$249.99</span></span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7: Water Purifier -->
+        <div class="product-card fade-in-up delay-300" data-category="kitchen">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1585837575652-267c041d77d4?w=500&auto=format&fit=crop&q=80" alt="Water Purifier">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Kent</span>
+            <h3 class="product-title">Kent Grand Plus RO+UV+UF Purifier</h3>
+            <p class="product-desc">Fully automatic water purifier with built-in mineralizer and double RO filtration layers.</p>
+            <div class="product-price-row">
+              <span class="product-price">$229.00</span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8: Ceiling Fan -->
+        <div class="product-card fade-in-up delay-400" data-category="appliances">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1591035897819-f4bdf739f446?w=500&auto=format&fit=crop&q=80" alt="Havells Ceiling Fan">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Havells</span>
+            <h3 class="product-title">Havells Nicola 1200mm Ceiling Fan</h3>
+            <p class="product-desc">High speed energy saving motor with decorative metallic trims and wide-sweep blades.</p>
+            <div class="product-price-row">
+              <span class="product-price">$45.00</span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9: Air Cooler -->
+        <div class="product-card fade-in-up delay-100" data-category="cooling">
+          <span class="badge-discount">-12%</span>
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=80" alt="Symphony Air Cooler">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Symphony</span>
+            <h3 class="product-title">Symphony Diet 3D 35L Tower Air Cooler</h3>
+            <p class="product-desc">Sleek space-saving design with multistage air purification filter and high-efficiency cooling pads.</p>
+            <div class="product-price-row">
+              <span class="product-price">$149.00 <span class="original-price">$169.00</span></span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 10: Induction Cooktop -->
+        <div class="product-card fade-in-up delay-200" data-category="kitchen">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1574269661127-73c2af981662?w=500&auto=format&fit=crop&q=80" alt="Bajaj Induction Cooktop">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Bajaj</span>
+            <h3 class="product-title">Bajaj Majesty 1900W Induction Cooktop</h3>
+            <p class="product-desc">Flat microcrystal plate with auto shut-off, delay timers, and 8 pre-set cooking programs.</p>
+            <div class="product-price-row">
+              <span class="product-price">$49.99</span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 11: Electric Kettle -->
+        <div class="product-card fade-in-up delay-300" data-category="kitchen">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&auto=format&fit=crop&q=80" alt="Morphy Richards Kettle">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Morphy Richards</span>
+            <h3 class="product-title">Morphy Richards 1.5L Electric Kettle</h3>
+            <p class="product-desc">Rapid-boil cordless steel kettle with auto shut-off protection and removable lime-scale filter.</p>
+            <div class="product-price-row">
+              <span class="product-price">$29.99</span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 12: Vacuum Cleaner -->
+        <div class="product-card fade-in-up delay-400" data-category="appliances">
+          <span class="badge-discount">-5%</span>
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=500&auto=format&fit=crop&q=80" alt="Dyson Vacuum Cleaner">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Dyson</span>
+            <h3 class="product-title">Dyson V15 Detect Cordless Vacuum</h3>
+            <p class="product-desc">Laser dust detection with intelligent suction adjusting and HEPA filtration for deep home cleaning.</p>
+            <div class="product-price-row">
+              <span class="product-price">$699.00 <span class="original-price">$739.00</span></span>
+              <button class="btn btn-secondary btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <i data-lucide="cpu" style="color: var(--primary-orange);"></i>
+          <span>Gada</span> Electronics
+        </a>
+        <p class="footer-about">Providing high-quality electronic appliances to happy homes for over 15 years. Quality, reliability, and satisfaction guaranteed.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook"><i data-lucide="facebook" style="width: 18px; height: 18px;"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter" style="width: 18px; height: 18px;"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram" style="width: 18px; height: 18px;"></i></a>
+          <a href="#" class="social-icon" aria-label="Youtube"><i data-lucide="youtube" style="width: 18px; height: 18px;"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <h3>Customer Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">Delivery & Shipping</a></li>
+          <li><a href="#">Installation Guide</a></li>
+          <li><a href="#">Warranty Claim</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <h3>Store Info</h3>
+        <div class="footer-info">
+          <div class="footer-info-item">
+            <i data-lucide="map-pin" class="icon-box" style="width: 16px; height: 16px;"></i>
+            <p>12, Gada Electronics Chambers, Goregaon East, Mumbai, Maharashtra 400063</p>
+          </div>
+          <div class="footer-info-item">
+            <i data-lucide="phone" class="icon-box" style="width: 16px; height: 16px;"></i>
+            <p>+91 98765 43210<br>+91 22 2456 7890</p>
+          </div>
+          <div class="footer-info-item">
+            <i data-lucide="mail" class="icon-box" style="width: 16px; height: 16px;"></i>
+            <p>info@gadaelectronics.com<br>support@gadaelectronics.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Gada Electronics. All rights reserved.</p>
+      <p>Designed with <i data-lucide="heart" style="width: 14px; height: 14px; fill: var(--primary-orange); stroke: none; display: inline; vertical-align: middle;"></i> for Gada Stores</p>
+    </div>
+  </footer>
+
+  <!-- Script to initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

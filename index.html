@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gada Electronics - Your Trusted Electronics Store</title>
+  <meta name="description" content="Welcome to Gada Electronics, your primary destination for high-quality household electronics, refrigerators, LED TVs, washing machines, and air conditioners at the best prices.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons (Premium UI Vector Icons) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Loading Animation -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="cpu" style="color: var(--primary-orange);"></i>
+        <span>Gada</span> Electronics
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="mobile-cta"><a href="tel:+1234567890" class="btn btn-orange btn-sm" style="color: white; margin-top: 15px;"><i data-lucide="phone"></i> Call Now</a></li>
+      </ul>
+      
+      <div class="navbar-cta">
+        <a href="tel:+1234567890" class="btn btn-orange btn-sm"><i data-lucide="phone"></i> Call Now</a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content fade-in-up">
+        <div class="badge">
+          <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+          <span>Premium Home Appliances</span>
+        </div>
+        <h1>Your Trusted <br><span class="blue">Electronics</span> Store</h1>
+        <p>Quality Electronic Appliances at Affordable Prices. Upgrade your home today with our wide range of televisions, refrigerators, washing machines, and more.</p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-primary">Shop Now <i data-lucide="arrow-right"></i></a>
+          <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper fade-in-up delay-200">
+        <div class="hero-image-bg"></div>
+        <img src="https://images.unsplash.com/photo-1558882224-cca166733360?w=800&auto=format&fit=crop&q=80" alt="Modern Home Appliances Showcase" class="hero-img" width="500" height="350">
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Categories -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2>Featured Categories</h2>
+        <p>Explore our wide collection of home electronics across popular categories.</p>
+      </div>
+      
+      <div class="categories-grid">
+        <!-- LED TVs -->
+        <div class="category-card fade-in-up delay-100">
+          <div class="icon-box">
+            <i data-lucide="tv" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h3>LED TVs</h3>
+          <p>Ultra HD, Smart Android & OLED TVs for premium entertainment.</p>
+        </div>
+        
+        <!-- Refrigerators -->
+        <div class="category-card fade-in-up delay-200">
+          <div class="icon-box">
+            <i data-lucide="snowflake" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h3>Refrigerators</h3>
+          <p>Double door, single door and smart cooling side-by-side fridges.</p>
+        </div>
+        
+        <!-- Washing Machines -->
+        <div class="category-card fade-in-up delay-300">
+          <div class="icon-box">
+            <i data-lucide="washing-machine" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h3>Washing Machines</h3>
+          <p>Front load, top load and fully automatic energy efficient models.</p>
+        </div>
+        
+        <!-- Air Conditioners -->
+        <div class="category-card fade-in-up delay-400">
+          <div class="icon-box">
+            <i data-lucide="wind" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h3>Air Conditioners</h3>
+          <p>Inverter split and window ACs with intelligent cooling modes.</p>
+        </div>
+        
+        <!-- Microwave Ovens -->
+        <div class="category-card fade-in-up delay-100">
+          <div class="icon-box">
+            <i data-lucide="oven" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h3>Microwave Ovens</h3>
+          <p>Convection & solo ovens for baking, grilling, and reheating.</p>
+        </div>
+        
+        <!-- Water Purifiers -->
+        <div class="category-card fade-in-up delay-200">
+          <div class="icon-box">
+            <i data-lucide="droplet" style="width: 32px; height: 32px;"></i>
+          </div>
+          <h3>Water Purifiers</h3>
+          <p>RO, UV, and Copper active purification technologies for pure water.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2>Why Choose Gada Electronics</h2>
+        <p>We pride ourselves on offering top-notch electronics alongside exceptional customer service.</p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card fade-in-up delay-100">
+          <div class="icon-box">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <div class="feature-card-content">
+            <h3>Genuine Products</h3>
+            <p>100% brand new and authentic electronic appliances sourced directly from official manufacturers.</p>
+          </div>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card fade-in-up delay-200">
+          <div class="icon-box">
+            <i data-lucide="badge-percent"></i>
+          </div>
+          <div class="feature-card-content">
+            <h3>Best Prices</h3>
+            <p>Unbeatable deals, festival discounts, and affordable finance options matching your budget.</p>
+          </div>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-card fade-in-up delay-300">
+          <div class="icon-box">
+            <i data-lucide="truck"></i>
+          </div>
+          <div class="feature-card-content">
+            <h3>Fast Delivery</h3>
+            <p>Same-day safe shipping and secure transportation straight to your doorstep.</p>
+          </div>
+        </div>
+        
+        <!-- Feature 4 -->
+        <div class="feature-card fade-in-up delay-100">
+          <div class="icon-box">
+            <i data-lucide="wrench"></i>
+          </div>
+          <div class="feature-card-content">
+            <h3>Installation Support</h3>
+            <p>Certified engineers to handle complete setup, testing, and demo of your appliances.</p>
+          </div>
+        </div>
+        
+        <!-- Feature 5 -->
+        <div class="feature-card fade-in-up delay-200">
+          <div class="icon-box">
+            <i data-lucide="award"></i>
+          </div>
+          <div class="feature-card-content">
+            <h3>Warranty</h3>
+            <p>Official brand warranties along with extended warranty protection options for peace of mind.</p>
+          </div>
+        </div>
+        
+        <!-- Feature 6 -->
+        <div class="feature-card fade-in-up delay-300">
+          <div class="icon-box">
+            <i data-lucide="heart-handshake"></i>
+          </div>
+          <div class="feature-card-content">
+            <h3>Trusted Service</h3>
+            <p>Over a decade of excellent customer trust, prompt query responses, and support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2>Featured Products</h2>
+        <p>Handpicked premium electronic items trending this season.</p>
+      </div>
+      
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card fade-in-up delay-100">
+          <span class="badge-discount">-15%</span>
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=500&auto=format&fit=crop&q=80" alt="Ultra HD Smart LED TV">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Sony</span>
+            <h3 class="product-title">Sony Bravia 55" 4K Ultra HD Smart LED TV</h3>
+            <p class="product-desc">Experience breathtaking 4K clarity with vivid colors and cinematic sound in built-in Android TV.</p>
+            <div class="product-price-row">
+              <span class="product-price">$699.99 <span class="original-price">$819.99</span></span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card fade-in-up delay-200">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500&auto=format&fit=crop&q=80" alt="Smart Double Door Refrigerator">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Samsung</span>
+            <h3 class="product-title">Samsung 345L Convertible Double Door Fridge</h3>
+            <p class="product-desc">Convertible 5-in-1 digital inverter technology with twin cooling plus system for optimal freshness.</p>
+            <div class="product-price-row">
+              <span class="product-price">$549.00</span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card fade-in-up delay-300">
+          <span class="badge-discount">-10%</span>
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1610557892470-76d74022fa36?w=500&auto=format&fit=crop&q=80" alt="Front Load Washing Machine">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">LG</span>
+            <h3 class="product-title">LG 8kg Direct Drive Front Load Washer</h3>
+            <p class="product-desc">6 Motion DD technology and steam hygiene options to eliminate 99.9% allergens with low noise.</p>
+            <div class="product-price-row">
+              <span class="product-price">$479.99 <span class="original-price">$529.99</span></span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card fade-in-up delay-100">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1621905252507-b354bc25edac?w=500&auto=format&fit=crop&q=80" alt="Split Inverter Air Conditioner">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Daikin</span>
+            <h3 class="product-title">Daikin 1.5 Ton 5 Star Inverter Split AC</h3>
+            <p class="product-desc">High energy efficiency star rating with intelligent cooling, PM 2.5 filter, and quiet operation.</p>
+            <div class="product-price-row">
+              <span class="product-price">$599.00</span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card fade-in-up delay-200">
+          <span class="badge-discount">-20%</span>
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1574269661127-73c2af981662?w=500&auto=format&fit=crop&q=80" alt="Convection Microwave Oven">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">IFB</span>
+            <h3 class="product-title">IFB 30L Convection Microwave Oven</h3>
+            <p class="product-desc">Multi-stage cooking with 101 auto-cook menus, fermentation option, and rotisserie grill.</p>
+            <div class="product-price-row">
+              <span class="product-price">$199.99 <span class="original-price">$249.99</span></span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card fade-in-up delay-300">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1585837575652-267c041d77d4?w=500&auto=format&fit=crop&q=80" alt="Water Purifier">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Kent</span>
+            <h3 class="product-title">Kent Grand Plus RO+UV+UF Water Purifier</h3>
+            <p class="product-desc">Advanced multi-stage purification with TDS controller, mineral enrichment, and zero waste.</p>
+            <div class="product-price-row">
+              <span class="product-price">$229.00</span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2>What Our Customers Say</h2>
+        <p>Real testimonials from home owners who upgraded their life with Gada Electronics.</p>
+      </div>
+      
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card fade-in-up delay-100">
+          <i data-lucide="quote" class="quote-icon" style="width: 40px; height: 40px;"></i>
+          <div class="stars">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+          </div>
+          <p class="review-text">"Bought a Sony TV and LG Washing Machine from Gada Electronics. The staff was incredibly helpful, pricing was better than online stores, and they delivered it in 4 hours!"</p>
+          <div class="reviewer">
+            <div class="reviewer-info">
+              <h4>Jethalal Gada</h4>
+              <p>Business Owner</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card fade-in-up delay-200">
+          <i data-lucide="quote" class="quote-icon" style="width: 40px; height: 40px;"></i>
+          <div class="stars">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+          </div>
+          <p class="review-text">"The installation support is top-notch. Their engineers set up my split AC within a day of purchase. They also walked me through all the settings. Highly recommended!"</p>
+          <div class="reviewer">
+            <div class="reviewer-info">
+              <h4>Babita Iyer</h4>
+              <p>Home Maker</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card fade-in-up delay-300">
+          <i data-lucide="quote" class="quote-icon" style="width: 40px; height: 40px;"></i>
+          <div class="stars">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #FBBF24;"></i>
+          </div>
+          <p class="review-text">"Gada Electronics has been my go-to shop for ten years. Genuine products, honest advice, and excellent after-sales care. The pricing matches or beats local distributors."</p>
+          <div class="reviewer">
+            <div class="reviewer-info">
+              <h4>Taarak Mehta</h4>
+              <p>Writer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section container">
+    <div class="cta-banner fade-in-up">
+      <div class="cta-banner-bg"></div>
+      <div class="cta-banner-content">
+        <h2>Visit Gada Electronics Today</h2>
+        <p>Get exciting offers on exchange deals and early festival pricing. Visit our showroom or get in touch for custom quotes.</p>
+        <a href="contact.html" class="btn btn-orange">Contact Us <i data-lucide="mail"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <i data-lucide="cpu" style="color: var(--primary-orange);"></i>
+          <span>Gada</span> Electronics
+        </a>
+        <p class="footer-about">Providing high-quality electronic appliances to happy homes for over 15 years. Quality, reliability, and satisfaction guaranteed.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook"><i data-lucide="facebook" style="width: 18px; height: 18px;"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter" style="width: 18px; height: 18px;"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram" style="width: 18px; height: 18px;"></i></a>
+          <a href="#" class="social-icon" aria-label="Youtube"><i data-lucide="youtube" style="width: 18px; height: 18px;"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <h3>Customer Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">Delivery & Shipping</a></li>
+          <li><a href="#">Installation Guide</a></li>
+          <li><a href="#">Warranty Claim</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <h3>Store Info</h3>
+        <div class="footer-info">
+          <div class="footer-info-item">
+            <i data-lucide="map-pin" class="icon-box" style="width: 16px; height: 16px;"></i>
+            <p>12, Gada Electronics Chambers, Goregaon East, Mumbai, Maharashtra 400063</p>
+          </div>
+          <div class="footer-info-item">
+            <i data-lucide="phone" class="icon-box" style="width: 16px; height: 16px;"></i>
+            <p>+91 98765 43210<br>+91 22 2456 7890</p>
+          </div>
+          <div class="footer-info-item">
+            <i data-lucide="mail" class="icon-box" style="width: 16px; height: 16px;"></i>
+            <p>info@gadaelectronics.com<br>support@gadaelectronics.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Gada Electronics. All rights reserved.</p>
+      <p>Designed with <i data-lucide="heart" style="width: 14px; height: 14px; fill: var(--primary-orange); stroke: none; display: inline; vertical-align: middle;"></i> for Gada Stores</p>
+    </div>
+  </footer>
+
+  <!-- Script to initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

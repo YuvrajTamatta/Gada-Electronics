@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Gada Electronics</title>
+  <meta name="description" content="Get in touch with Gada Electronics. Find our store address, phone numbers, email, business hours, Google Map location, and contact form, alongside FAQ details.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Loading Animation -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="cpu" style="color: var(--primary-orange);"></i>
+        <span>Gada</span> Electronics
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li class="mobile-cta"><a href="tel:+1234567890" class="btn btn-orange btn-sm" style="color: white; margin-top: 15px;"><i data-lucide="phone"></i> Call Now</a></li>
+      </ul>
+      
+      <div class="navbar-cta">
+        <a href="tel:+1234567890" class="btn btn-orange btn-sm"><i data-lucide="phone"></i> Call Now</a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Sections -->
+  <main class="section">
+    <div class="container">
+      
+      <div class="contact-grid">
+        
+        <!-- Left Side: Store Info & Map -->
+        <div class="contact-info-col fade-in-up">
+          <div class="contact-card-box">
+            <h3>Gada Electronics Showroom</h3>
+            
+            <div class="info-item">
+              <div class="icon-box">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="info-item-content">
+                <h4>Address</h4>
+                <p>12, Gada Electronics Chambers, Goregaon East, Mumbai, Maharashtra 400063</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-box">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="info-item-content">
+                <h4>Phone Numbers</h4>
+                <p>+91 98765 43210 (Mobile)<br>+91 22 2456 7890 (Landline)</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-box">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="info-item-content">
+                <h4>Email Addresses</h4>
+                <p>info@gadaelectronics.com<br>support@gadaelectronics.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-box">
+                <i data-lucide="clock"></i>
+              </div>
+              <div class="info-item-content">
+                <h4>Business Hours</h4>
+                <p>Monday - Saturday: 9:00 AM to 9:00 PM<br>Sunday: 10:00 AM to 5:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Map Embed Placeholder -->
+          <div class="map-placeholder">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.647318721752!2d72.85501867597143!3d19.167980349139886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7cc22129759%3A0xc15469ed1e21b033!2sGoregaon%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Gada Electronics Mumbai Location Map">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form-box fade-in-up delay-200">
+          <h3>Send Us a Message</h3>
+          <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 0.9rem;">Have questions about our appliances, pricing, or delivery options? Fill out the form below and our team will get back to you shortly.</p>
+          
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" class="form-control" placeholder="What is this regarding?" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Write your message details here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Submit Message <i data-lucide="send"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq-section fade-in-up">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Get answers to common queries regarding shopping, shipping, and setup support.</p>
+        </div>
+
+        <div class="faq-grid">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <h3>Do you deliver outside Mumbai?</h3>
+              <div class="faq-icon-box">
+                <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+              </div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Yes! While we offer free same-day shipping within Mumbai limits, we also deliver major household electronic items to adjoining cities and other states across India through verified premium logistic partners. Shipping charges may apply based on dimensions and state regulations.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <h3>What kind of warranty is offered on appliances?</h3>
+              <div class="faq-icon-box">
+                <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+              </div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Every single item sold at Gada Electronics is brand new and comes with a 100% genuine brand warranty card. Standard appliance warranties range between 1 to 2 years, with extended compressor or panel warranties (up to 10 years) offered directly by manufacturers like Sony, Samsung, and LG. We also provide our own optional extended support warranty covers.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <h3>Is standard installation support free?</h3>
+              <div class="faq-icon-box">
+                <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+              </div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                Yes, standard installation and product demonstration are completely free for all television models (wall-mounting brackets included), refrigerator placements, washing machines, and split air conditioner installations within 24 hours of delivery. Brand-authorized service engineers will perform the setup at your home.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <h3>What payment options and EMI finance schemes do you support?</h3>
+              <div class="faq-icon-box">
+                <i data-lucide="chevron-down" style="width: 18px; height: 18px;"></i>
+              </div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-body-content">
+                We support Cash, Credit and Debit Cards (Visa, Mastercard, RuPay), UPI (Google Pay, PhonePe, Paytm), and Netbanking. Additionally, we provide Zero Down-payment & No-cost EMI financing options at our showroom through Bajaj Finserv, HDFC bank cards, and other major financial institutions.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <i data-lucide="cpu" style="color: var(--primary-orange);"></i>
+          <span>Gada</span> Electronics
+        </a>
+        <p class="footer-about">Providing high-quality electronic appliances to happy homes for over 15 years. Quality, reliability, and satisfaction guaranteed.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook"><i data-lucide="facebook" style="width: 18px; height: 18px;"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i data-lucide="twitter" style="width: 18px; height: 18px;"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram" style="width: 18px; height: 18px;"></i></a>
+          <a href="#" class="social-icon" aria-label="Youtube"><i data-lucide="youtube" style="width: 18px; height: 18px;"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <h3>Customer Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">Delivery & Shipping</a></li>
+          <li><a href="#">Installation Guide</a></li>
+          <li><a href="#">Warranty Claim</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <h3>Store Info</h3>
+        <div class="footer-info">
+          <div class="footer-info-item">
+            <i data-lucide="map-pin" class="icon-box" style="width: 16px; height: 16px;"></i>
+            <p>12, Gada Electronics Chambers, Goregaon East, Mumbai, Maharashtra 400063</p>
+          </div>
+          <div class="footer-info-item">
+            <i data-lucide="phone" class="icon-box" style="width: 16px; height: 16px;"></i>
+            <p>+91 98765 43210<br>+91 22 2456 7890</p>
+          </div>
+          <div class="footer-info-item">
+            <i data-lucide="mail" class="icon-box" style="width: 16px; height: 16px;"></i>
+            <p>info@gadaelectronics.com<br>support@gadaelectronics.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Gada Electronics. All rights reserved.</p>
+      <p>Designed with <i data-lucide="heart" style="width: 14px; height: 14px; fill: var(--primary-orange); stroke: none; display: inline; vertical-align: middle;"></i> for Gada Stores</p>
+    </div>
+  </footer>
+
+  <!-- Script to initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
